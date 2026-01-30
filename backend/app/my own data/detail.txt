@@ -1,0 +1,68 @@
+PS F:\kyc_automation_system> cd F:\kyc_automation_system\backend
+>> .\venv\Scripts\Activate.ps1
+>>
+(venv) PS F:\kyc_automation_system\backend> uvicorn app.main:app --reload
+>>
+INFO:     Will watch for changes in these directories: ['F:\\kyc_automation_system\\backend']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [6132] using WatchFiles
+INFO:     Started server process [2900]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+
+what do i do next::
+
+1️⃣ Stop the FastAPI server
+
+Since it’s running in your terminal:
+
+Press CTRL + C in the terminal where uvicorn is running.
+
+You’ll see something like:
+
+INFO: Shutting down
+INFO: Finished server process
+
+
+This safely stops the server.
+
+2️⃣ Deactivate your virtual environment
+
+If your terminal shows (venv) at the beginning:
+
+deactivate
+
+
+This returns your terminal to normal.
+
+3️⃣ Close your terminal
+
+Now you can safely close PowerShell or Command Prompt.
+
+All your code and database are safe. Nothing is lost.
+
+4️⃣ Resume tomorrow
+
+When you want to continue:
+
+Open a terminal and navigate to your project folder:
+
+cd F:\kyc_automation_system\backend
+
+
+Activate the virtual environment:
+
+.\venv\Scripts\Activate.ps1
+
+
+Start the FastAPI server again:
+
+uvicorn app.main:app --reload
+
+
+Go to: http://127.0.0.1:8000 in your browser.
+
+You’ll be back where you left off. ✅
+
+works on
+http://127.0.0.1:8000/kyc
